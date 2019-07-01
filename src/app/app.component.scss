@@ -1,0 +1,24 @@
+@import 'variables.scss';
+
+.mat-toolbar-row > button {
+  background-color: $button-color;
+  border: none;
+}
+
+.content {
+  margin: 30px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.mat-toolbar {
+  background-color: $header-color;
+}
+
+@media screen and (max-width: 768px) {
+  .mat-toolbar-row > button {
+    display: none;
+  }
+}

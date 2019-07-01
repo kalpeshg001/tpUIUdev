@@ -1,0 +1,21 @@
+@import '../../variables.scss';
+
+.image-preview {
+  padding: 30px;
+}
+
+h1 {
+  color: $title-color;
+}
+
+.bouton-valider {
+  color: white;
+  background-color: $button-color;
+  height: 40px;
+  width: 100px;
+  position: fixed;
+  z-index: 99;
+  bottom: 60px;
+  right: 60px;
+  border: none;
+}

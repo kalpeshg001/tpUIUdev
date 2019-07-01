@@ -1,3 +1,33 @@
-<p>
-  page-animal works!
-</p>
+<h1>Ajouter un animal</h1>
+<div class="row">
+  <div class="col-6">
+    <mat-form-field class="col-12">
+      <mat-label>Espèce</mat-label>
+      <mat-select [(ngModel)]="animal.espece">
+        <mat-option value="Chien">
+          Chien
+        </mat-option>
+        <mat-option value="Chat">
+          Chat
+        </mat-option>
+        <mat-option value="Cheval">
+          Cheval
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field class="col-12">
+      <input matInput placeholder="Race" [(ngModel)]="animal.race" />
+    </mat-form-field>
+    <mat-form-field class="col-12">
+      <input matInput placeholder="Url de l'image" [(ngModel)]="animal.url" />
+      <mat-hint>Utiliser une image de forme réctangulaire et de bonne qualité</mat-hint>
+    </mat-form-field>
+    <mat-form-field class="col-12">
+      <textarea matInput placeholder="Description" [(ngModel)]="animal.description"></textarea>
+    </mat-form-field>
+  </div>
+  <div class="col-6">
+    <img class="col-12 image-preview" [src]="animal.url" />
+  </div>
+</div>
+<button class="bouton-valider" (click)="valider()">Valider</button>

@@ -64,6 +64,9 @@ export class AnimalService {
   }
 
   ajouterAnimal(animal: { race: string; espece: string; description: string; url: string }) {
+    if (!this.animaux) {
+      this.animaux = this.ANIMAUX;
+    }
     this.animaux.push(animal);
   }
 }

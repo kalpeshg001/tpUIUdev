@@ -19,6 +19,8 @@ import { AppComponent } from './app.component';
 import { ListeAnimauxComponent } from './ui-components/liste-animaux/liste-animaux.component';
 import { PageAnimalComponent } from './ui-components/page-animal/page-animal.component';
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent, ListeAnimauxComponent, PageAnimalComponent],
@@ -37,7 +39,9 @@ import { AppRoutingModule } from './app-routing.module';
     MatCardModule,
     MatSidenavModule,
     MatListModule,
-    MatButtonModule
+    MatButtonModule,
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
