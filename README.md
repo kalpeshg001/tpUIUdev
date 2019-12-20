@@ -1,29 +1,38 @@
-# TpUiUdev
+Exercice 1: Pimper l'UI
+Ajouter une marge de 30px au contenu général de la page afin que les cartes ne touchent pas le bord
+Sur chaque carte, le bouton "like" doit être en blanc sur fond rouge, le bouton "share" en blanc sur fond vert
+Changer la couleur du header pour qu'il soit rouge, changer la couleur des titres pour qu'ils soient gris-foncés
+Placer les cartes dans une 'row' boostrap de manière à en avoir 4 par lignes sur un écran desktop, 2 par lignes sur un Ipad, et unique 1 par ligne sur un téléphone mobile.
+Placer le bouton 'Ajouter un animal' à droite du header en utilisant la propriété 'flex'
+Ajouter un bouton rond, affichant un '+', qui se tient toujours à 60px du bas et de la droite de l'écran (ce bouton ne doit pas bouger lors du scroll)
+limiter la taille de la description dans les cartes à 3 lignes. Si le texte est trop long il doit se fondre vers le blanc pour disparaitre.
 
-Bonjour les UDEVs!
+Exercice 2: Lecture des données dans un fichier
+Modifier le service existant pour que les données soient lues depuis un fichier JSON sur le disque et pas uniquement en mémoire.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.2.
+Exercice 3 : Formulaire d'ajout d'un animal
+Réaliser un formulaire de création d'animal en utilisant les composants 'Angular Material' dans le composant 'page Animal'
+Ce composant doit être affichable depuis le bouton 'ajouter un animal' du header ou le bouton '+' flottant
+A la validation, les données doivent être ajoutées dans le fichier JSON
 
-## Development server
+Exercice 4: Utilisation d'un module externe
+Ajouter le module 'Angular-notifier' dans votre application en suivant la doc disponible sur le repo npm https://www.npmjs.com/package/angular-notifier
+Lors de la création d'un animal, un message de confirmation vert doit apparaitre.
+Exercice 4: Page de visualisation d'un annimal
+Créer un composant de visualisation d'un animal.
+Cette page doit permettre de retrouver toutes les informations disponible dans une carte animal, disposées de manière lisible
+La page doit avoir un bouton permettant de revenir à la liste des animaux.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Exercice 5: Variabiliser le style
+Créer un fichier de variables Saas à la racine du projet et déclarer dedans deux variables: Header-color Title-color Bouton-color
+Modifier les styles existants pour que le header, les boutons et les titres prennent les couleurs définies dans le fichiers quels que soit le composant concernés
 
-## Code scaffolding
+Exercice 6: Popin d'évaluation d'un animal
+Créer une popin d'évaluation d'un animal, permettant de renseigner une note sur 5 (systeme d'étoiles) et un commentaire. Cette popin s'ouvre lors du click sur le bouton 'like'. Elle doit être composée d'un fond gris translucide sur tout la page et une popin blanche au milieu
+Les évaluations doivent être sauvegardée dans le JSON pour chaque animal (plusieurs évaluations possibles sur le même animal).
+Après la validation d'une notification, l'utilisateur doit être redirigé vers la page de visualisation d'un animal.
+La page de visualisation d'un animal doit afficher la liste des notations en dessous des informations de l'animal
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Exercice 7: Menu déroulant 'share'
+Le click sur le bouton 'share' d'un animal doit faire apparaitre sous la souris un menu déroulant permettant de choisir entre les logos de differents reseaux sociaux.
+Au click sur un des logos, afficher un message temporaire indiquant 'Votre animal à bien été partagé'
